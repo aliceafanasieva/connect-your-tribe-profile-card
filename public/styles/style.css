@@ -36,6 +36,9 @@
   width: 45rem;
   height: 26rem;
   background-color: rgb(255, 255, 255);
+}
+
+.card-face--front {
   display: grid;
   grid-template-columns: 60% 1fr;
   box-shadow: 3px 3px 7px 0 #454545;
