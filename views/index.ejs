@@ -4,29 +4,34 @@
 <html lang="nl">
 
 <body>
+
   <div class="background-image"></div>
-  <section class="card-frame">
-    <!-- GRID -->
+
+  <main class="card-frame">
     <div class="card">
       <div class="card-inner">
+        <!-- FRONT OF THE CARD -->
+        <!-- GRID FOR IMAGE AND CONTENT -->
         <div class="card-face--front">
-          <div class="written-content">
-            <header class="large-header"> <%- name %> </header>
-            <header class="medium-header"> <%- surname %> </header>
-             </header>
-            <p class="large-par">web designer / web developer</p>
-            <div class="contact">
-              <p class="small-par">+31 6 39032244</p>
-              <p class="small-par">alice.afanasieva@gmail.com</p>  
-            </div>
-          </div>
+          <!-- GRID ONLY FOR CONTENT -->
+          <section class="written-content">
+            <h1 class="large-header"> <%- name %> </h1>
+            <h1 class="medium-header"> <%- surname %> </h1>
+            <h2> web designer / web developer </h2>
+            <section class="contact">
+              <p> +31 6 39032244 </p>
+              <p> alice.afanasieva@gmail.com </p>  
+            </section>
+          </section>
           <img src="../images/kitty.png" alt="The designer's nickname in an illustration"/>
         </div>
+        <!-- BACK OF THE CARD -->
         <div class="card-face--back">
           <p class="small-par"> <%- bio %> </p>
         </div>
+
       </div>
     </div>    
-  </section>
+  </main>
 
 <%- include('./partials/foot') %>
