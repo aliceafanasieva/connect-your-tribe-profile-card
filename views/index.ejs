@@ -6,29 +6,22 @@
 <body>
 
   <div class="background-image"></div>
-  <!-- class card-frame is er om visitekaartje samen met pin PNG in een container te plaatsen-->
-  <container class="card-frame card-frame-front">
-    <img class="pin-image--front" src="../images/pin-front.png" alt="Paper pin"/>
     <div class="card">
       <div class="card__inner">
         <!-- FRONT OF THE CARD -->
-        <!-- GRID FOR IMAGE AND CONTENT -->
         <div class="card__face card__face--front">
-          <div class="grid-front">
-            <!-- GRID ONLY FOR CONTENT -->
-            <section class="written-content">
-              <h1 class="large-header"> <%- name %> </h1>
-              <h1 class="medium-header"> <%- surname %> </h1>
-              <h2> web designer / web developer </h2>
-              <section class="contact">
-                <p> +31 6 39032244 </p>
-                <p> alice.afanasieva@gmail.com </p>  
-              </section>
+          <section class="written-content">
+            <h1 class="large-header"> <%- name %> </h1>
+            <h1 class="medium-header"> <%- surname %> </h1>
+            <h2> web designer / web developer </h2>
+            <section class="contact">
+              <p> +31 6 39032244 </p>
+              <p> alice.afanasieva@gmail.com </p>  
             </section>
-            <img src="../images/kitty.png" alt="The designer's nickname in an illustration"/>
-          </div>
+          </section>
+          <img class="kitty" src="../images/kitty.png" alt="The designer's nickname in an illustration"/>
         </div>
-
+        
         <!-- BACK OF THE CARD -->
         <div class="card__face card__face--back">
           <p class="small-par"> <%- bio %> </p>
@@ -38,9 +31,7 @@
             <img src="../images/next.svg" alt="Next">
           </section>
         </div>
-
       </div>
     </div>    
-  </container>
 
 <%- include('./partials/foot') %>
