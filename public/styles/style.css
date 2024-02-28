@@ -87,6 +87,9 @@ body {
 .card__face--back {
   background-color: var(--white);
   transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .written-content {
@@ -152,6 +155,26 @@ p {
 
 .contact :nth-child(1){
   align-self: flex-end;
+}
+
+.small-par {
+  margin: 0 4rem;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* --- Social Icons --- */
+
+.socials-buttons {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 2rem;
+}
+
+.socials-buttons img {
+  width: 30px;
+  height: 30px;
+  margin-left: 1rem;
 }
 
 
